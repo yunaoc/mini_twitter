@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:twitXml xmlns:ns2="http://www.example.org/twit/">
+    <ID>db07cdd9-48e7-4d3b-bb39-2c324ab2846d</ID>
+    <EmissionDate>1678184648624</EmissionDate>
+    <Twiter>5e1dc06c-c339-4f1c-aa70-40ce3bbe7db2</Twiter>
+    <Text>desfez</Text>
+</ns2:twitXml>
