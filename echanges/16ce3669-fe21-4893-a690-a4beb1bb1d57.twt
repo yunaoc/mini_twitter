@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:twitXml xmlns:ns2="http://www.example.org/twit/">
+    <ID>16ce3669-fe21-4893-a690-a4beb1bb1d57</ID>
+    <EmissionDate>1678271564736</EmissionDate>
+    <Twiter>c356688c-c26e-4674-af2c-0c202f2aa2a6</Twiter>
+    <Text>Je suis en cours #beurk</Text>
+</ns2:twitXml>
