@@ -35,10 +35,11 @@ public class UtilisateursView extends JavaFxView implements IModelObserver, IDat
     @Override
     public void init() {
         Label titre = new Label("Utilisateurs");
-        add(titre,0,0, 2,1);
+        add(titre,0,0, 1,1);
         if (monController.getSession().getConnectedUser() != null) {
             List<User> users = monController.getAllUsers();
             GridPane pane = new GridPane();
+            pane.setVgap(20);
             for (int i = 0; i < users.size(); i++) {
                 User user = users.get(i);
                 if (!monController.getSession().getConnectedUser().equals(user)) {
@@ -59,7 +60,6 @@ public class UtilisateursView extends JavaFxView implements IModelObserver, IDat
             ScrollPane sp = new ScrollPane(pane);
             sp.setHbarPolicy(javafx.scene.control.ScrollPane.ScrollBarPolicy.NEVER);
             sp.setVbarPolicy(javafx.scene.control.ScrollPane.ScrollBarPolicy.AS_NEEDED);
-            setPrefSize(400, 400);
             add(sp,0,1);
         }
     }

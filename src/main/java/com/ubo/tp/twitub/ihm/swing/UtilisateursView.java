@@ -58,11 +58,10 @@ public class UtilisateursView extends SwingView implements IModelObserver, IData
                     }
 
                     panelUsers.add(userComposant, new GridBagConstraints(0, i, 1, 1, 0, 1, GridBagConstraints.CENTER,
-                            GridBagConstraints.NONE, new Insets(0, 00, 0, 0), 0, 0)
+                            GridBagConstraints.NONE, new Insets(0, 0, 20, 0), 0, 0)
                     );
                     panelUsers.add(boutonAbonnement, new GridBagConstraints(1, i, 1, 1  , 0, 0, GridBagConstraints.CENTER,
-                            GridBagConstraints.NONE, new Insets(0,
-                            0, 0, 0), 0, 0));
+                            GridBagConstraints.NONE, new Insets(0, 0, 20, 0), 0, 0));
 
 
                 }

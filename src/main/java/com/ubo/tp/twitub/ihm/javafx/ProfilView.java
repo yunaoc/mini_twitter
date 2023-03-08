@@ -71,12 +71,12 @@ public class ProfilView extends JavaFxView implements IModelObserver, IDatabaseO
 
     @Override
     public void notifyUserDeleted(User deletedUser) {
-
+        refreshPane(this);
     }
 
     @Override
     public void notifyUserModified(User modifiedUser) {
-
+        refreshPane(this);
     }
 
     @Override

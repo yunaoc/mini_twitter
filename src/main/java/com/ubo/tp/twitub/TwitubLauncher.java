@@ -12,7 +12,6 @@ import java.applet.Applet;
  * @author S.Lucas
  */
 public class TwitubLauncher extends Application {
-	private static Twitub twitub;
 
 	/**
 	 * Launcher.
@@ -25,8 +24,12 @@ public class TwitubLauncher extends Application {
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
-		twitub = new Twitub();
-		twitub.setPrimaryStage(primaryStage);
-		twitub.show();
+		Twitub twitubSwing = new Twitub(true);
+		twitubSwing.show();
+
+
+		Twitub twitubFx = new Twitub(false);
+		twitubFx.setPrimaryStage(primaryStage);
+		twitubFx.show();
 	}
 }

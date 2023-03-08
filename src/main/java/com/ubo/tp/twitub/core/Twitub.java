@@ -55,6 +55,11 @@ public class Twitub {
 	protected boolean mIsMockEnabled = false;
 
 	/**
+	 * Idnique si le mode bouchoné est activé.
+	 */
+	protected boolean isSwing;
+
+	/**
 	 * Nom de la classe de l'UI.
 	 */
 	protected String mUiClassName;
@@ -64,7 +69,8 @@ public class Twitub {
 	/**
 	 * Constructeur.
 	 */
-	public Twitub() {
+	public Twitub(Boolean isSwing) {
+		this.isSwing = isSwing;
 	}
 
 	/**
@@ -119,10 +125,13 @@ public class Twitub {
 	 * Initialisation l'application
 	 */
 	protected void initApp() {
-		mMainView = new SwingMainView();
-		mJavaFxMainView = new JavaFxMainView(getPrimaryStage());
-		SwingMainController swingMainController = new SwingMainController(this.mDatabase, this.mEntityManager, mMainView);
-		//JavaFxMainController javaFxMainController = new JavaFxMainController(this.mDatabase, this.mEntityManager, mJavaFxMainView);
+		if(isSwing){
+			mMainView = new SwingMainView();
+			new SwingMainController(this.mDatabase, this.mEntityManager, mMainView);
+		}else{
+			mJavaFxMainView = new JavaFxMainView(getPrimaryStage());
+			new JavaFxMainController(this.mDatabase, this.mEntityManager, mJavaFxMainView);
+		}
 	}
 
 	/**

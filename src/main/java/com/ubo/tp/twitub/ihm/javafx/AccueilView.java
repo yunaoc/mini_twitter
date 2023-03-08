@@ -89,17 +89,17 @@ public class AccueilView extends JavaFxView implements IModelObserver, IDatabase
 
     @Override
     public void notifyUserAdded(User addedUser) {
-
+        refreshPane(this);
     }
 
     @Override
     public void notifyUserDeleted(User deletedUser) {
-
+        refreshPane(this);
     }
 
     @Override
     public void notifyUserModified(User modifiedUser) {
-
+        refreshPane(this);
     }
 
     @Override
