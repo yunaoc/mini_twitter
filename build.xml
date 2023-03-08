@@ -1,5 +1,5 @@
 <project name="mini_twitter" basedir="." default="main">
-    <!-- C:/"Program Files"/Java/jre1.8.0_333/bin/java -cp ".\mini_twitter.jar;../../lib/flatlaf-3.0.jar" main.java.com.ubo.tp.twitub.TwitubLauncher -->
+    <!-- C:/"Program Files"/Java/jre1.8.0_333/bin/java -cp "./build/jar/mini_twitter.jar;./lib/flatlaf-3.0.jar" main.java.com.ubo.tp.twitub.TwitubLauncher -->
 
     <property name="src.dir"     value="src"/>
 
